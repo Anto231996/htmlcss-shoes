@@ -5,9 +5,13 @@
 }
 
 body{
-    max-width: 800px;
-    min-width: 600px;
     font-family: 'Outfit', sans-serif;
+}
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
 .wrapped{
@@ -17,7 +21,7 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.bg {
+.bg{
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -30,7 +34,6 @@ div.bg#red{
 div.bg#green{
     background-color: green;
 }
-
 
 div.bg#yellow{
     background-color: yellow;
@@ -45,5 +48,3 @@ h1{
 h1#green{
     color: green;
 }
-
-
